@@ -6,7 +6,7 @@
 #    By: hgeffroy <hgeffroy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 12:02:28 by hgeffroy          #+#    #+#              #
-#    Updated: 2022/11/22 12:46:28 by hgeffroy         ###   ########.fr        #
+#    Updated: 2022/12/08 09:10:33 by hgeffroy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,15 +66,6 @@ OBJ_LIBFT = $(LIBFT_DIR)$(OBJ_DIR)ft_atoi.o \
 			$(LIBFT_DIR)$(OBJ_DIR)ft_substr.o \
 			$(LIBFT_DIR)$(OBJ_DIR)ft_tolower.o \
 			$(LIBFT_DIR)$(OBJ_DIR)ft_toupper.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstadd_back.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstadd_front.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstclear.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstdelone.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstiter.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstlast.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstmap.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstnew.o \
-			$(LIBFT_DIR)$(OBJ_DIR)ft_lstsize.o \
 
 #Rules
 
@@ -90,7 +81,7 @@ $(OBJ_DIR) :
 	mkdir -p $(OBJ_DIR)
 
 $(LIBFT) :
-	make bonus -C $(LIBFT_DIR)
+	make -C $(LIBFT_DIR)
 	cp $(LIBFT_DIR)/libft.a ./
 
 clean :
